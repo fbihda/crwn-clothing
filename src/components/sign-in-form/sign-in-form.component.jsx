@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 
 import {
@@ -85,7 +86,7 @@ const SignInForm = () => {
         />
         <div className="buttons-container">
           <Button type="submit">Sign In</Button>
-          <Button type="button" buttonTapye="google" onClick={signInWithGoogle}>
+          <Button type="button" buttonTapye={BUTTON_TYPE_CLASSES.google} onClick={signInWithGoogle}>
             Google sign in
           </Button>
         </div>
